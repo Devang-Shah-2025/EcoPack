@@ -18,7 +18,7 @@ const FAQS = [
   { q: 'Are your products really biodegradable/compostable?', a: 'Yes — all our eco claims are backed by third-party certifications (EN 13432 for European compostability standards and ASTM D6400 for US/international standards). We never make unverified "eco-friendly" claims without documentation.' },
   { q: 'Can I get a sample before placing a bulk order?', a: 'Absolutely! We offer a free sample pack that includes one unit of each product category. You only pay for shipping. This way you can feel the quality, test the sizing, and make an informed decision before committing to a full order.' },
   { q: 'Do you offer custom branding?', a: 'Yes! We offer full custom branding including logo printing, custom colors, and branded inserts from 100 units. Our design team can help you create artwork if you need it, or we work from your existing brand files.' },
-  { q: 'How can I place an order?', a: 'You can get in touch via the contact form, WhatsApp (+92 300 0000000), or email us at orders@ecopack.co. We\'ll confirm product selection, quantity, and delivery timeline before processing your order.' },
+  { q: 'How can I place an order?', a: 'You can get in touch via the contact form, WhatsApp (9999999999), or email us at orders@ecopack.co. We\'ll confirm product selection, quantity, and delivery timeline before processing your order.' },
 ]
 
 const INITIAL_FORM = { name: '', business: '', email: '', requirement: '', message: '' }
@@ -131,8 +131,8 @@ export default function ContactUs() {
               <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:28 }}>
                 {[
                   { icon:'📧', label:'Email', val:'hello@ecopack.co', sub:'We reply within 24 hours' },
-                  { icon:'📱', label:'WhatsApp', val:'+92 300 000 0000', sub:'Mon–Sat, 9am–7pm PKT' },
-                  { icon:'📍', label:'Location', val:'Karachi, Pakistan', sub:'Available for local pickups' },
+                  { icon:'📱', label:'WhatsApp', val:'9999999999', sub:'Mon–Sat, 9am–7pm' },
+                  { icon:'📍', label:'Location', val:'Ahmedabad, India', sub:'Available for local pickups' },
                   { icon:'🕐', label:'Business Hours', val:'Mon–Sat: 9am – 7pm', sub:'Sunday: Closed' },
                 ].map((item, i) => (
                   <div key={i} className="contact-info-card">
@@ -159,7 +159,7 @@ export default function ContactUs() {
               {/* Map Placeholder */}
               <div className="map-placeholder">
                 <div className="map-pin">📍</div>
-                <p>Karachi, Pakistan</p>
+                <p>Ahmedabad, India</p>
                 <span>EcoPack HQ</span>
               </div>
             </div>

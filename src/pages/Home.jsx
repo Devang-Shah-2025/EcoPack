@@ -49,11 +49,13 @@ export default function Home({ navigate }) {
           {Array.from({ length: 8 }).map((_, i) => (
             <span key={i} className="hero-leaf">🌿</span>
           ))}
+          <div className="hero-ring" />
+          <div className="hero-ring" />
         </div>
         <div className="container">
           <div className="hero-two-col">
             <div className="hero-content">
-              <div className="hero-badge">🌱 Sustainable Packaging Startup</div>
+              <div className="hero-badge"><span className="hero-badge-dot" />🌱 Sustainable Packaging Startup</div>
               <h1>
                 <span className="accent">EcoPack</span> –{' '}
                 Packaging the Future,{' '}
@@ -91,24 +93,34 @@ export default function Home({ navigate }) {
             </div>
 
             <div className="hero-visual">
-              <div className="hero-box">
-                <div className="hero-box-icon">♻️</div>
-                <h3>EcoPack</h3>
-                <p>Biodegradable · Compostable · Recyclable</p>
-                <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center', marginTop: 4 }}>
-                  {['🌱 Bio', '♻️ Recycle', '🍃 Compost'].map((tag, i) => (
-                    <span key={i} style={{ background: 'rgba(255,255,255,0.15)', color: '#95d5b2', fontSize: '0.72rem', padding: '4px 10px', borderRadius: 999, fontWeight: 600 }}>
-                      {tag}
-                    </span>
-                  ))}
+              <div className="hero-visual-wrap">
+                <div className="hero-box">
+                  <div className="hero-box-icon">♻️</div>
+                  <h3>EcoPack</h3>
+                  <p>Biodegradable · Compostable · Recyclable</p>
+                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center', marginTop: 4 }}>
+                    {['🌱 Bio', '♻️ Recycle', '🍃 Compost'].map((tag, i) => (
+                      <span key={i} style={{ background: 'rgba(255,255,255,0.15)', color: '#95d5b2', fontSize: '0.72rem', padding: '4px 10px', borderRadius: 999, fontWeight: 600 }}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
+                <div className="hero-orbit hero-orbit-1">🌿</div>
+                <div className="hero-orbit hero-orbit-2">📦</div>
+                <div className="hero-orbit hero-orbit-3">🌍</div>
               </div>
             </div>
           </div>
         </div>
+        {/* Scroll indicator */}
+        <div className="scroll-indicator">
+          <span>Scroll</span>
+          <div className="scroll-arrow" />
+        </div>
       </section>
 
-      {/* ── WHO / WHAT / WHY / WHERE ── */}
+      <div className="glow-divider" />}
       <section className="section section-alt">
         <div className="container">
           <div className="section-header">
@@ -190,7 +202,9 @@ export default function Home({ navigate }) {
         </div>
       </section>
 
-      {/* ── IMPACT STATEMENT ── */}
+      <div className="glow-divider" />
+
+      {/* ── IMPACT STATEMENT ── */}}
       <div className="impact-bar">
         <div className="container">
           <p className="reveal">
@@ -200,6 +214,8 @@ export default function Home({ navigate }) {
           </p>
         </div>
       </div>
+
+      <div className="glow-divider" />
 
       {/* ── SUSTAINABILITY PROMISE ── */}
       <section className="section section-mint">

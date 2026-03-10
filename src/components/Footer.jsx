@@ -57,8 +57,8 @@ export default function Footer({ navigate }) {
           <div className="footer-contact">
             <h4>Get In Touch</h4>
             <p>📧 hello@ecopack.green</p>
-            <p>📞 +92 300 1234567</p>
-            <p>📍 Lahore, Pakistan</p>
+            <p>📞 9999999999</p>
+            <p>📍 Ahmedabad, India</p>
             <p>⏰ Mon–Sat, 9am–6pm</p>
             <div style={{ marginTop: 16 }}>
               <button className="btn btn-outline-white" style={{ padding: '9px 20px', fontSize: '0.82rem', borderRadius: 999 }} onClick={() => navigate('contact')}>

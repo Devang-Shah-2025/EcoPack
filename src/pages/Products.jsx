@@ -51,6 +51,24 @@ const CATEGORIES = {
 export default function Products() {
   useReveal()
   const [tab, setTab] = useState('ecommerce')
+
+  // Re-trigger reveal observer whenever tab changes so new cards aren't invisible
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const obs = new IntersectionObserver(
+        entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') }),
+        { threshold: 0.08 }
+      )
+      document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale')
+        .forEach(el => { if (!el.classList.contains('visible')) obs.observe(el) })
+      // Also immediately mark product cards visible since they're already in viewport
+      document.querySelectorAll('.products-grid .reveal')
+        .forEach(el => el.classList.add('visible'))
+      return () => obs.disconnect()
+    }, 60)
+    return () => clearTimeout(timer)
+  }, [tab])
+
   const switchTab = (t) => {
     setTab(t)
   }

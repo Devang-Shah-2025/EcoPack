@@ -140,11 +140,11 @@ export default function BusinessModel() {
             ))}
           </div>
 
-          <div className="reveal" style={{ background:'var(--green-mint)', borderRadius:16, padding:'36px 40px' }}>
-            <h3 style={{ fontFamily:"'Poppins',sans-serif", fontSize:'1.15rem', fontWeight:600, color:'var(--green-dark)', marginBottom:20 }}>Revenue Breakdown</h3>
-            <AnimBar label="Bulk Product Sales" pct={55} color="#2d6a4f" />
-            <AnimBar label="Custom Branding Services" pct={30} color="#52b788" />
-            <AnimBar label="Subscription Packages" pct={15} color="#95d5b2" />
+          <div className="revenue-breakdown-card reveal">
+            <h3>📊 Revenue Breakdown</h3>
+            <AnimBar label="Bulk Product Sales" pct={55} color="linear-gradient(90deg,#52b788,#2d6a4f)" />
+            <AnimBar label="Custom Branding Services" pct={30} color="linear-gradient(90deg,#95d5b2,#52b788)" />
+            <AnimBar label="Subscription Packages" pct={15} color="linear-gradient(90deg,#4ecca3,#95d5b2)" />
           </div>
         </div>
       </section>
