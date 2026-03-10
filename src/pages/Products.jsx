@@ -16,34 +16,52 @@ const CATEGORIES = {
   ecommerce: {
     label: '🛒 E-Commerce',
     products: [
-      { icon: '📮', name: 'Compostable Mailer Bags', material: 'Plant-based PBAT + PLA', best: 'Fashion, accessories, gifts', benefit: '100% compostable in 90 days', bg: '#e8f5e9' },
-      { icon: '📦', name: 'Recyclable Shipping Boxes', material: 'FSC-certified kraft board', best: 'Electronics, home goods, books', benefit: 'Fully recyclable & reusable', bg: '#fff8e1' },
-      { icon: '🎀', name: 'Kraft Tissue Paper', material: 'Recycled kraft paper', best: 'Jewelry, apparel, cosmetics', benefit: 'Biodegradable, elegant finish', bg: '#fce4ec' },
-      { icon: '📎', name: 'Paper Tape', material: 'Water-activated kraft paper', best: 'Box sealing, gifting', benefit: 'Zero plastic, 100% paper', bg: '#e3f2fd' },
-      { icon: '🔖', name: 'Eco Label Stickers', material: 'Recycled paper + soy ink', best: 'Branding, product labels', benefit: 'Compostable, vibrant printing', bg: '#f3e5f5' },
-      { icon: '🛡️', name: 'Recycled Bubble Wrap', material: 'Recycled materials', best: 'Fragile items protection', benefit: 'Reduces virgin plastic use by 90%', bg: '#e8f5e9' },
+      // biodegradable mailer bag (Pexels free)
+      { icon: '📮', img: 'https://images.pexels.com/photos/19383384/pexels-photo-19383384.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Compostable Mailer Bags', material: 'Plant-based PBAT + PLA', best: 'Fashion, accessories, gifts', benefit: '100% compostable in 90 days', bg: '#e8f5e9' },
+      // open cardboard shipping box on wooden desk (Pexels free)
+      { icon: '📦', img: 'https://images.pexels.com/photos/4498152/pexels-photo-4498152.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Recyclable Shipping Boxes', material: 'FSC-certified kraft board', best: 'Electronics, home goods, books', benefit: 'Fully recyclable & reusable', bg: '#fff8e1' },
+      // brown paper bag filled with white tissue paper (Pexels free)
+      { icon: '🎀', img: 'https://images.pexels.com/photos/9218541/pexels-photo-9218541.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Kraft Tissue Paper', material: 'Recycled kraft paper', best: 'Jewelry, apparel, cosmetics', benefit: 'Biodegradable, elegant finish', bg: '#fce4ec' },
+      // person sealing cardboard box with tape dispenser (Pexels free)
+      { icon: '📎', img: 'https://images.pexels.com/photos/6169019/pexels-photo-6169019.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Paper Tape', material: 'Water-activated kraft paper', best: 'Box sealing, gifting', benefit: 'Zero plastic, 100% paper', bg: '#e3f2fd' },
+      // close-up of sticker on white paper bag (Pexels free)
+      { icon: '🔖', img: 'https://images.pexels.com/photos/7363076/pexels-photo-7363076.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Eco Label Stickers', material: 'Recycled paper + soy ink', best: 'Branding, product labels', benefit: 'Compostable, vibrant printing', bg: '#f3e5f5' },
+      // transparent bubble wrap texture close-up (Pexels free)
+      { icon: '🛡️', img: 'https://images.pexels.com/photos/6159701/pexels-photo-6159701.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Recycled Bubble Wrap', material: 'Recycled materials', best: 'Fragile items protection', benefit: 'Reduces virgin plastic use by 90%', bg: '#e8f5e9' },
     ],
   },
   food: {
     label: '🍱 Food & Beverage',
     products: [
-      { icon: '🥡', name: 'Biodegradable Takeaway Containers', material: 'Sugarcane bagasse', best: 'Cloud kitchens, tiffin services, cafes', benefit: 'Microwave-safe, breaks down in 60 days', bg: '#fff8e1' },
-      { icon: '☕', name: 'Eco Paper Cups', material: 'PLA-lined recycled paper', best: 'Cafes, home bakers, events', benefit: 'Compostable lining, no plastic lid needed', bg: '#e8f5e9' },
-      { icon: '🍴', name: 'Wooden Cutlery Sets', material: 'Certified birchwood', best: 'Home bakers, food delivery, catering', benefit: 'Biodegradable, premium feel', bg: '#f3e5f5' },
-      { icon: '🛍️', name: 'Eco Carry Bags', material: 'Jute / recycled cotton', best: 'Grocery, bakery, retail pickup', benefit: 'Reusable, 100% natural fibers', bg: '#e3f2fd' },
-      { icon: '🧁', name: 'Kraft Bakery Boxes', material: 'Food-grade kraft board', best: 'Cakes, pastries, desserts', benefit: 'Grease-resistant, biodegradable', bg: '#fce4ec' },
-      { icon: '🍶', name: 'Biodegradable Food Wrapping Paper', material: 'Wax-free parchment', best: 'Sandwiches, wraps, street food', benefit: 'Food-safe, fully compostable', bg: '#fff8e1' },
+      // eco-friendly paper food containers with fruit labels stacked (Pexels free)
+      { icon: '🥡', img: 'https://images.pexels.com/photos/32424228/pexels-photo-32424228.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Biodegradable Takeaway Containers', material: 'Sugarcane bagasse', best: 'Cloud kitchens, tiffin services, cafes', benefit: 'Microwave-safe, breaks down in 60 days', bg: '#fff8e1' },
+      // four brown disposable cups on white surface (Pexels free)
+      { icon: '☕', img: 'https://images.pexels.com/photos/8015710/pexels-photo-8015710.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Eco Paper Cups', material: 'PLA-lined recycled paper', best: 'Cafes, home bakers, events', benefit: 'Compostable lining, no plastic lid needed', bg: '#e8f5e9' },
+      // reusable bamboo cutlery set on linen cloth (Pexels free)
+      { icon: '🍴', img: 'https://images.pexels.com/photos/7879769/pexels-photo-7879769.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Wooden Cutlery Sets', material: 'Certified birchwood', best: 'Home bakers, food delivery, catering', benefit: 'Biodegradable, premium feel', bg: '#f3e5f5' },
+      // simple jute tote bag with rope handles on white background (Pexels free)
+      { icon: '🛍️', img: 'https://images.pexels.com/photos/12025443/pexels-photo-12025443.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Eco Carry Bags', material: 'Jute / recycled cotton', best: 'Grocery, bakery, retail pickup', benefit: 'Reusable, 100% natural fibers', bg: '#e3f2fd' },
+      // simple brown kraft box against blank background (Pexels free)
+      { icon: '🧁', img: 'https://images.pexels.com/photos/8015700/pexels-photo-8015700.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Kraft Bakery Boxes', material: 'Food-grade kraft board', best: 'Cakes, pastries, desserts', benefit: 'Grease-resistant, biodegradable', bg: '#fce4ec' },
+      // crinkled brown craft paper texture for wrapping (Pexels free)
+      { icon: '🍶', img: 'https://images.pexels.com/photos/13031765/pexels-photo-13031765.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Biodegradable Food Wrapping Paper', material: 'Wax-free parchment', best: 'Sandwiches, wraps, street food', benefit: 'Food-safe, fully compostable', bg: '#fff8e1' },
     ],
   },
   branding: {
     label: '🎨 Custom Branding',
     products: [
-      { icon: '✏️', name: 'Custom Logo Printing', material: 'Soy-based inks on eco stock', best: 'Any product, any size', benefit: 'Vibrant full-color, eco-ink', bg: '#e8f5e9' },
-      { icon: '💌', name: 'Branded Thank-You Cards', material: 'Recycled cotton paper', best: 'E-commerce, subscription boxes', benefit: 'Seed paper option — plants a flower!', bg: '#fce4ec' },
-      { icon: '🏷️', name: 'Branded Eco Stickers', material: 'Compostable paper + soy ink', best: 'Product packaging, gifting', benefit: 'Custom shapes, branded design', bg: '#e3f2fd' },
-      { icon: '🎁', name: 'Custom Gift Boxes', material: 'Kraft board + eco ribbon', best: 'Gift brands, luxury eco products', benefit: 'Premium unboxing experience', bg: '#f3e5f5' },
-      { icon: '🧴', name: 'Eco Bottle Labels', material: 'Compostable adhesive paper', best: 'Beverages, skincare, food jars', benefit: 'Water-resistant, biodegradable', bg: '#fff8e1' },
-      { icon: '📋', name: 'Branded Packaging Inserts', material: 'Recycled card stock', best: 'E-commerce, subscription boxes', benefit: 'Adds brand story to every order', bg: '#e8f5e9' },
+      // stack of eco-friendly branded cardboard packaging (Pexels free)
+      { icon: '✏️', img: 'https://images.pexels.com/photos/14557897/pexels-photo-14557897.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Custom Logo Printing', material: 'Soy-based inks on eco stock', best: 'Any product, any size', benefit: 'Vibrant full-color, eco-ink', bg: '#e8f5e9' },
+      // thank-you card hanging from a gift box (Pexels free)
+      { icon: '💌', img: 'https://images.pexels.com/photos/7309447/pexels-photo-7309447.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Branded Thank-You Cards', material: 'Recycled cotton paper', best: 'E-commerce, subscription boxes', benefit: 'Seed paper option — plants a flower!', bg: '#fce4ec' },
+      // person putting a branded sticker on paper bag (Pexels free)
+      { icon: '🏷️', img: 'https://images.pexels.com/photos/7309465/pexels-photo-7309465.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Branded Eco Stickers', material: 'Compostable paper + soy ink', best: 'Product packaging, gifting', benefit: 'Custom shapes, branded design', bg: '#e3f2fd' },
+      // open gift box with catalogue / packaging inserts (Pexels free)
+      { icon: '🎁', img: 'https://images.pexels.com/photos/4841374/pexels-photo-4841374.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Custom Gift Boxes', material: 'Kraft board + eco ribbon', best: 'Gift brands, luxury eco products', benefit: 'Premium unboxing experience', bg: '#f3e5f5' },
+      // person opening box revealing white bottle in eco unboxing (Pexels free)
+      { icon: '🧴', img: 'https://images.pexels.com/photos/6958425/pexels-photo-6958425.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Eco Bottle Labels', material: 'Compostable adhesive paper', best: 'Beverages, skincare, food jars', benefit: 'Water-resistant, biodegradable', bg: '#fff8e1' },
+      // pouch inside a small gift box, clean lighting (Pexels free)
+      { icon: '📋', img: 'https://images.pexels.com/photos/8015884/pexels-photo-8015884.jpeg?auto=compress&cs=tinysrgb&w=400&h=260&fit=crop', name: 'Branded Packaging Inserts', material: 'Recycled card stock', best: 'E-commerce, subscription boxes', benefit: 'Adds brand story to every order', bg: '#e8f5e9' },
     ],
   },
 }
@@ -106,8 +124,14 @@ export default function Products() {
           <div className="products-grid">
             {CATEGORIES[tab].products.map((p, i) => (
               <div key={`${tab}-${i}`} className={`product-card reveal delay-${(i % 3) + 1}`}>
-                <div className="product-card-img" style={{ background: p.bg, fontSize: '3.5rem' }}>
-                  {p.icon}
+                <div className="product-card-img" style={{ background: p.bg }}>
+                  <img
+                    src={p.img}
+                    alt={p.name}
+                    className="product-card-photo"
+                    onError={e => { e.currentTarget.style.display = 'none' }}
+                  />
+                  <span className="product-card-emoji">{p.icon}</span>
                 </div>
                 <div className="product-card-body">
                   <h3>{p.name}</h3>

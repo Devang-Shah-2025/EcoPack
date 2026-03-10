@@ -69,7 +69,11 @@ export default function ContactUs() {
         <div className="container">
           <div style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:48 }}>
             {/* Form */}
-            <div className="reveal-left">
+            <div className="reveal-left contact-ring-wrap">
+              <i style={{ '--clr':'#3ab07a' }} />
+              <i style={{ '--clr':'#4ecca3' }} />
+              <i style={{ '--clr':'#2d8a5e' }} />
+              <div className="contact-ring-content">
               <h2 style={{ fontFamily:"'Poppins',sans-serif", fontSize:'1.6rem', fontWeight:800, color:'var(--green-dark)', marginBottom:8 }}>Send Us a Message</h2>
               <p style={{ color:'var(--text-secondary)', marginBottom:28, fontSize:'0.975rem' }}>Fill in the form and we'll get back to you within 24 hours.</p>
 
@@ -121,6 +125,7 @@ export default function ContactUs() {
                   </button>
                 </form>
               )}
+              </div>
             </div>
 
             {/* Contact Info */}
