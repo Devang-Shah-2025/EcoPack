@@ -120,7 +120,7 @@ export default function Home({ navigate }) {
         </div>
       </section>
 
-      <div className="glow-divider" />}
+      <div className="glow-divider" />
       <section className="section section-alt">
         <div className="container">
           <div className="section-header">
@@ -204,7 +204,7 @@ export default function Home({ navigate }) {
 
       <div className="glow-divider" />
 
-      {/* ── IMPACT STATEMENT ── */}}
+      {/* ── IMPACT STATEMENT ── */}
       <div className="impact-bar">
         <div className="container">
           <p className="reveal">
@@ -251,15 +251,30 @@ export default function Home({ navigate }) {
           </div>
           <div className="testimonial-grid">
             {[
-              { text: 'EcoPack completely changed how we package our baked goods. Our customers love the eco-friendly boxes and our brand image has never looked better!', name: 'Ayesha Malik', role: 'Home Baker · Lahore', avatar: 'AM', color: '#2d6a4f' },
-              { text: 'I was paying more for plastic packaging anyway. Switching to EcoPack compostable mailers saved me money AND my customers are happier. Highly recommend.', name: 'Raza Ahmed',  role: 'Instagram Clothing Seller · Karachi', avatar: 'RA', color: '#40916c' },
-              { text: 'As an organic skincare brand, our packaging had to match our values. EcoPack delivered beautiful, branded eco-packaging at a price we could afford as a startup.', name: 'Sara Khan',    role: 'Organic Skincare Brand · Islamabad', avatar: 'SK', color: '#52b788' },
+              {
+                text: 'EcoPack completely changed how we package our baked goods. Our repeat orders went up because customers now share our eco-friendly boxes on social media.',
+                name: 'Priya Sharma',
+                role: 'Home Bakery Owner · Mumbai',
+                image: 'https://images.pexels.com/photos/2158999/pexels-photo-2158999.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop'
+              },
+              {
+                text: 'Switching to EcoPack mailers helped us reduce damaged shipments and build a premium brand image. The material quality is excellent and very consistent.',
+                name: 'Arjun Mehta',
+                role: 'D2C Apparel Founder · Bengaluru',
+                image: 'https://images.pexels.com/photos/7638402/pexels-photo-7638402.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop'
+              },
+              {
+                text: 'Our skincare brand needed sustainable packaging that still feels premium. EcoPack gave us custom branding, faster deliveries, and better customer trust.',
+                name: 'Neha Iyer',
+                role: 'Skincare Brand Manager · Chennai',
+                image: 'https://images.pexels.com/photos/4428288/pexels-photo-4428288.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop'
+              },
             ].map((t, i) => (
               <div key={i} className={`testimonial-card reveal delay-${i + 1}`}>
                 <div className="stars">★★★★★</div>
                 <p>{t.text}</p>
                 <div className="testimonial-author">
-                  <div className="author-avatar" style={{ background: t.color }}>{t.avatar}</div>
+                  <img className="author-avatar author-avatar-img" src={t.image} alt={t.name} loading="lazy" />
                   <div>
                     <div className="author-name">{t.name}</div>
                     <div className="author-role">{t.role}</div>
