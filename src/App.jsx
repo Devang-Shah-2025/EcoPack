@@ -5,7 +5,6 @@ import Home from './pages/Home'
 import TheProblem from './pages/TheProblem'
 import OurSolutions from './pages/OurSolutions'
 import Products from './pages/Products'
-import HowMade from './pages/HowMade'
 import BusinessModel from './pages/BusinessModel'
 import TargetAudience from './pages/TargetAudience'
 import AboutUs from './pages/AboutUs'
@@ -65,7 +64,6 @@ function App() {
     'problem':        <TheProblem />,
     'solutions':      <OurSolutions navigate={navigate} />,
     'products':       <Products />,
-    'how-made':       <HowMade />,
     'business-model': <BusinessModel />,
     'audience':       <TargetAudience />,
     'about':          <AboutUs />,

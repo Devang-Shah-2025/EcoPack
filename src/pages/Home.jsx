@@ -255,19 +255,19 @@ export default function Home({ navigate }) {
                 text: 'EcoPack completely changed how we package our baked goods. Our repeat orders went up because customers now share our eco-friendly boxes on social media.',
                 name: 'Priya Sharma',
                 role: 'Home Bakery Owner · Mumbai',
-                image: 'https://images.pexels.com/photos/2158999/pexels-photo-2158999.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop'
+                image: 'https://images.pexels.com/photos/14104/pexels-photo-14104.jpeg?auto=compress&cs=tinysrgb&w=260&h=260&fit=crop'
               },
               {
                 text: 'Switching to EcoPack mailers helped us reduce damaged shipments and build a premium brand image. The material quality is excellent and very consistent.',
                 name: 'Arjun Mehta',
                 role: 'D2C Apparel Founder · Bengaluru',
-                image: 'https://images.pexels.com/photos/7638402/pexels-photo-7638402.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop'
+                image: 'https://images.pexels.com/photos/3785110/pexels-photo-3785110.jpeg?auto=compress&cs=tinysrgb&w=260&h=260&fit=crop'
               },
               {
                 text: 'Our skincare brand needed sustainable packaging that still feels premium. EcoPack gave us custom branding, faster deliveries, and better customer trust.',
                 name: 'Neha Iyer',
                 role: 'Skincare Brand Manager · Chennai',
-                image: 'https://images.pexels.com/photos/4428288/pexels-photo-4428288.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop'
+                image: 'https://images.pexels.com/photos/1197132/pexels-photo-1197132.jpeg?auto=compress&cs=tinysrgb&w=260&h=260&fit=crop'
               },
             ].map((t, i) => (
               <div key={i} className={`testimonial-card reveal delay-${i + 1}`}>

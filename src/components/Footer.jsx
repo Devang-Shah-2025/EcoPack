@@ -4,7 +4,6 @@ export default function Footer({ navigate }) {
     { id: 'problem',        label: 'The Problem' },
     { id: 'solutions',      label: 'Our Solutions' },
     { id: 'products',       label: 'Products' },
-    { id: 'how-made',       label: 'How We Make' },
     { id: 'business-model', label: 'Business Model' },
     { id: 'audience',       label: 'Target Audience' },
     { id: 'about',          label: 'About Us' },
@@ -40,7 +39,7 @@ export default function Footer({ navigate }) {
           <div>
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              {pages.slice(0, 5).map(p => (
+              {pages.slice(0, 4).map(p => (
                 <li key={p.id}><button onClick={() => navigate(p.id)}>{p.label}</button></li>
               ))}
             </ul>
@@ -48,7 +47,7 @@ export default function Footer({ navigate }) {
           <div>
             <h4>Company</h4>
             <ul className="footer-links">
-              {pages.slice(5).map(p => (
+              {pages.slice(4).map(p => (
                 <li key={p.id}><button onClick={() => navigate(p.id)}>{p.label}</button></li>
               ))}
             </ul>

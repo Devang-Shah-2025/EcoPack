@@ -795,14 +795,15 @@
 .testimonial-card p { font-size: 0.9rem; color: var(--text-medium); line-height: 1.78; margin-bottom: 22px; padding-top: 28px; font-style: italic; }
 .testimonial-author { display: flex; align-items: center; gap: 14px; }
 .author-avatar {
-  width: 46px; height: 46px; border-radius: 50%;
+  width: 88px; height: 88px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-display); font-size: 1.1rem; font-weight: 800;
   color: var(--white); flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 .author-avatar-img {
   object-fit: cover;
-  border: 2px solid rgba(78, 204, 163, 0.45);
+  object-position: center center;
+  border: 3px solid rgba(78, 204, 163, 0.45);
   background: #d8f3dc;
 }
 .author-name { font-family: var(--font-display); font-weight: 700; font-size: 0.88rem; color: var(--text-dark); }
